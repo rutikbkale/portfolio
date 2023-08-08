@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rutik's Portfolio</title>
+    <link rel="stylesheet" href="../style files/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="first-nav">
+          <p>Rutik's Portfolio</p>
+        </div>
+        <div class="second-nav">
+          <div class="project-nav nav">
+            <i class="fa-solid fa-sheet-plastic" style="color: #91b5f2"></i
+            >&nbsp;&nbsp;
+            <div class="textchange">
+              <a href="project.html"> Projects</a>
+            </div>
+          </div>
+
+          <div class="certificate-nav nav">
+            <i class="fa-solid fa-certificate" style="color: #91b5f2"></i
+            >&nbsp;&nbsp;
+            <div class="textchange">
+              <a href="../certificates files/certificate.html">
+                Certificate's</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-nav nav">
+            <i class="fa-solid fa-address-card" style="color: #94aedb"></i
+            >&nbsp;&nbsp;
+            <div class="textchange">
+              <a href="contact.html"> Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="sec-first">
+        <div class="sec-content">
+          <p>Hi, I am <span class="purple">Rutik Kale</span> .</p>
+          <p>This is my Portfolio.</p>
+          <p>And I am a passionate</p>
+          <span id="element" class="purple"></span>
+          <div class="button">
+            <a href="resume.html" target="_blank" class="r-button">Resume</a>
+            <a
+              href="https://github.com/rutikbkale"
+              target="_blank"
+              class="r-button"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="sec-second">
+        <div class="sec-img">
+          <img src="../img/java_img.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Java Developer.", "Web Developer."],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
+</html>
