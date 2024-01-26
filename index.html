@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rutik's Portfolio</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-purple-500 font-\[Poppins\] scroll-smooth">
+    <header>
+        <nav class="p-5 bg-purple-900 shadow md:flex md:items-center md:justify-between text-white fixed w-full top-0">
+            <div class="flex justify-between items-center">
+                <span class="text-3xl cursor-pointer font-bold">
+                    Rutik's Portfolio
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-purple-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Home" class="text-xl hover:text-purple-500 duration-500 relative">Home
+                    </a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#About" class="text-xl hover:text-purple-500 duration-500">About Me</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Project" class="text-xl hover:text-purple-500 duration-500">Project</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Contact" class="text-xl hover:text-purple-500 duration-500">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+
+        <div id="Home" class="flex flex-col md:flex-row items-center justify-between mt-24 mx-10">
+            <div class="left text-white mb-10 md:mb-0">
+                <div class="info text-center md:text-left text-3xl">
+                    <p class="text-6xl font-bold py-5">
+                        Hi, I am <span class="text-purple-900">Rutik Kale.</span>
+                    </p>
+                    <p class="py-2">
+                        I am passionate about Web as well as Java Development.
+                    </p>
+                </div>
+                <div class="buttons flex flex-col md:flex-row items-center justify-center md:justify-start m-5">
+                    <a href="https://drive.google.com/file/d/1D3l4KuXnMrRR2UwulinFlq2p1d2X5KMV/view?usp=sharing"
+                        download
+                        class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2">
+                        Resume
+                    </a>
+
+                    <a href="https://github.com/rutikbkale"
+                        class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2 md:mr-4">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="right my-10">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/full-stack-developer-working-on-project-5248497-4403356.png"
+                    alt="" class="w-full md:max-w-lg" />
+            </div>
+        </div>
+        <div class="seprater h-2 bg-purple-900"></div>
+
+
+        <!-- About Section -->
+
+        <div class="m-5 py-5 font-sans text-white" id="About">
+            <span class="font-bold text-5xl">About Me</span>
+            <div class="container flex flex-col md:flex-row">
+                <!-- Left section -->
+                <div class="left m-5 w-full md:w-1/2">
+                    <div class="flex flex-row  m-5">
+                        <p class="mx-5 cursor-pointer relative text-2xl md:text-3xl font-bold"
+                            onclick="opentab('skills')">Skills
+                        </p>
+                        <p class="mx-5 cursor-pointer relative text-2xl md:text-3xl font-bold"
+                            onclick="opentab('education')">
+                            Education</p>
+                        <p class="mx-5 cursor-pointer relative text-2xl md:text-3xl font-bold"
+                            onclick="opentab('certificates')">
+                            Certificates</p>
+                    </div>
+
+                    <div class="tab-contents active-tab m-5" id="skills">
+                        <!-- Skills content -->
+                        <ul class="mx-5">
+                            <li class="text-2xl my-4 border-b border-purple-900">
+                                <span class="block text-2xl font-bold mb-2">FrontEnd Tech</span>
+                                <ul class="flex gap-4 text-xl">
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Html 5</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Css 3</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Javascript</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Tailwind Css</li>
+                                </ul>
+                            </li>
+                            <li class="text-lg my-4 border-b border-purple-900">
+                                <span class="block text-2xl font-bold mb-2">BackEnd Tech</span>
+                                <ul class="flex flex-wrap">
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Java</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Php</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Spring</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Node.js</li>
+                                </ul>
+                            </li>
+                            <li class="text-2xl my-4 border-b border-purple-900">
+                                <span class="block text-2xl font-bold mb-2">Databases</span>
+                                <ul class="flex gap-4 text-xl">
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Oracle</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">MySql</li>
+                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">MongoDB</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents m-5 hidden" id="education">
+                        <!-- Education content -->
+                        <ul class="mx-5 space-y-4">
+                            <li class="<div class=" tab-contents m-5" id="education">
+                                <ul class="mx-5 space-y-4">
+                                    <li class="border-b border-purple-900 pb-4">
+                                        <span class="text-2xl font-semibold">Bachelor's in Computer Science
+                                            (BCS)</span><br>
+                                        <span class="text-gray-300">Sadguru Gadage Maharaj College (SGM),
+                                            Karad</span><br>
+                                        <span class="flex justify-between text-gray-300">
+                                            <p>9.13 CGPA</p>
+                                            <p>2020-2023</p>
+                                        </span>
+                                    </li>
+                                    <li class="border-b border-purple-900 pb-4">
+                                        <span class="text-2xl font-semibold">Master's in Computer Application
+                                            (MCA)</span><br>
+                                        <span class="text-gray-300">JSPM's Rajarshi Shahu College of Engineering
+                                            (RSCOE), Tathawade</span><br>
+                                        <span class="flex justify-end text-gray-300">
+                                            <p>2023-present</p>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents m-5 hidden" id="certificates">
+                        <!-- Certificates content -->
+                        <ul class="mx-5 space-y-4">
+                            <span class="text-2xl">Java Developer Training - Besant Technologies</span>
+                            <li>
+                                <a href="https://drive.google.com/file/d/1Y-k_IdKOe83Qwp_ymfXp-WVb3eFiA9Gn/view?usp=sharing"
+                                    class="block hover:bg-transparent transition duration-300 px-4 py-2 rounded-lg"><button
+                                        class="focus:outline-none text-white bg-purple-900 hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-md px-2">Click
+                                        here</button>
+                                </a>
+                            </li>
+                            <span class="text-2xl">Full Stack Web Development - Infosys Springboard</span>
+                            <li>
+                                <a href="https://drive.google.com/file/d/1rHx0X9tUWvOo6Zqgcvik_UQS3IZZp7hy/view?usp=sharing"
+                                    class="block hover:bg-transparent transition duration-300 px-4 py-2 rounded-lg"><button
+                                        class="focus:outline-none text-white bg-purple-900 hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-md px-2">Click
+                                        here</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right section -->
+                <div class="right m-5 text-2xl w-full md:w-1/2">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Hello my name is Rutik Kale. I am currently a graduate student currently
+                        pursuing my master's degree at JSPM's RSCOE Tathawade, specializing in Computer Application With
+                        a strong academic foundation and a deep curiosity for learning new technologies, I am committed
+                        to expanding my knowledge in this ever-evolving field.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;I am enthusiastic about connecting with fellow students, professors, and
+                        professionals in software industries to share insights, ideas, and inspiration. Let's connect
+                        and explore the possibilities together.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
