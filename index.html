@@ -43,27 +43,28 @@
     <main>
         <!-- Home Section -->
 
-        <div id="Home" class="flex flex-col md:flex-row items-center justify-between my-24 mx-10">
-            <div class="left text-white mb-10 md:mb-0">
+        <div id="Home"
+            class="flex flex-col mt-16 justify-center md:flex-row md:items-center md:justify-between md:my-24 md:mx-10">
+            <div class="left text-white mb-10 flex flex-col items-center md:flex-row md:mb-0">
                 <div class="info text-center md:text-left text-3xl">
-                    <p class="text-6xl font-bold py-5">
+                    <p class="md:text-6xl text-4xl font-bold py-3 md:py-5">
                         Hi, I am <span class="text-purple-900">Rutik Kale.</span>
                     </p>
                     <p class="py-2">
                         I am passionate about Web as well as Java Development.
                     </p>
-                </div>
-                <div class="buttons flex flex-col md:flex-row items-center justify-center md:justify-start m-5">
-                    <a href="https://drive.google.com/file/d/1D3l4KuXnMrRR2UwulinFlq2p1d2X5KMV/view?usp=sharing"
-                        download
-                        class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2">
-                        Resume
-                    </a>
+                    <div class="buttons flex flex-col md:flex-row items-center justify-center md:justify-start m-5">
+                        <a href="https://drive.google.com/file/d/1D3l4KuXnMrRR2UwulinFlq2p1d2X5KMV/view?usp=sharing"
+                            download
+                            class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2">
+                            Resume
+                        </a>
 
-                    <a href="https://github.com/rutikbkale"
-                        class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2 md:mr-4">
-                        GitHub
-                    </a>
+                        <a href="https://github.com/rutikbkale"
+                            class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2 md:mr-4">
+                            GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="right my-10">
@@ -71,37 +72,35 @@
                     alt="" class="w-full md:max-w-lg" />
             </div>
         </div>
-        <div class="seprater h-2 bg-purple-900"></div>
+        <div class="seprater h-2 w-full md:w-auto bg-purple-900"></div>
+
 
         <!-- About Section -->
 
-        <div class="mx-5 my-20 py-5 font-sans text-white" id="About">
-            <span class="font-bold text-5xl">About Me</span>
+        <div class="m-5  md:my-20 md:py-5 font-sans text-white" id="About">
+            <span class="font-bold text-3xl md:text-5xl">About Me</span>
             <div class="container flex flex-col md:flex-row">
                 <!-- Left section -->
-                <div class="left m-5 w-full md:w-1/2">
-                    <div class="flex flex-row  m-5">
-                        <p class="mx-5 cursor-pointer relative text-2xl md:text-3xl font-bold"
-                            onclick="opentab('skills')">Skills
+                <div class="left md:m-5 w-full md:w-1/2">
+                    <div class="flex flex-row my-3 md:m-5">
+                        <p class="mx-5 cursor-pointer text-2xl md:text-3xl font-bold hover:border-b-2 border-purple-900" onclick="opentab('skills')">Skills
                         </p>
-                        <p class="mx-5 cursor-pointer relative text-2xl md:text-3xl font-bold"
-                            onclick="opentab('education')">
+                        <p class="mx-5 cursor-pointer text-2xl md:text-3xl font-bold hover:border-b-2 border-purple-900" onclick="opentab('education')">
                             Education</p>
-                        <p class="mx-5 cursor-pointer relative text-2xl md:text-3xl font-bold"
-                            onclick="opentab('certificates')">
+                        <p class="mx-5 cursor-pointer text-2xl md:text-3xl font-bold hover:border-b-2 border-purple-900" onclick="opentab('certificates')">
                             Certificates</p>
                     </div>
 
-                    <div class="tab-contents active-tab m-5" id="skills">
+                    <div class="tab-contents active-tab md:m-5" id="skills">
                         <!-- Skills content -->
                         <ul class="mx-5">
                             <li class="text-2xl my-4 border-b border-purple-900">
                                 <span class="block text-2xl font-bold mb-2">FrontEnd Tech</span>
                                 <ul class="flex gap-4 text-xl">
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Html 5</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Css 3</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Javascript</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Tailwind Css</li>
+                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Html</li>
+                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Css</li>
+                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Javascript</li>
+                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Tailwind</li>
                                 </ul>
                             </li>
                             <li class="text-lg my-4 border-b border-purple-900">
@@ -124,7 +123,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents m-5 hidden" id="education">
+                    <div class="tab-contents md:m-5 hidden" id="education">
                         <!-- Education content -->
                         <ul class="mx-5 space-y-4">
                             <li class="<div class=" tab-contents m-5" id="education">
@@ -153,7 +152,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents m-5 hidden" id="certificates">
+                    <div class="tab-contents md:m-5 hidden" id="certificates">
                         <!-- Certificates content -->
                         <ul class="mx-5 space-y-4">
                             <span class="text-2xl">Java Developer Training - Besant Technologies</span>
@@ -167,7 +166,8 @@
                             <span class="text-2xl">Full Stack Web Development - Infosys Springboard</span>
                             <li class="border-b border-purple-900">
                                 <a href="https:/>
-                                <a href="https://drive.google.com/file/d/1rHx0X9tUWvOo6Zqgcvik_UQS3IZZp7hy/view?usp=sharing"
+                                <a href="
+                                    https://drive.google.com/file/d/1rHx0X9tUWvOo6Zqgcvik_UQS3IZZp7hy/view?usp=sharing"
                                     class="block hover:bg-transparent transition duration-300 px-4 py-2 rounded-lg"><button
                                         class="focus:outline-none text-white bg-purple-900 hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-md px-2">Click
                                         here</button>
@@ -178,7 +178,7 @@
                 </div>
 
                 <!-- Right section -->
-                <div class="right m-5 text-2xl w-full md:w-1/2">
+                <div class="right m-2 md:m-5 text-xl md:text-2xl w-full md:w-1/2">
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;Hello my name is Rutik Kale. I am currently a graduate student currently
                         pursuing my master's degree at JSPM's RSCOE Tathawade, specializing in Computer Application With
@@ -193,13 +193,94 @@
                 </div>
             </div>
         </div>
-        <div class="seprater h-2 bg-purple-900"></div>
+        <div class="seprater h-2 w-full md:w-auto bg-purple-900"></div>
+
+        <!-- Project Section -->
+
+        <div id="Project" class="m-5 md:py-5 font-sans text-white">
+            <span class="font-bold text-3xl md:text-5xl">Projects</span>
+            <div class="container flex flex-col md:flex-row flex-wrap my-10 justify-center items-center">
+
+                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
+                    <img src="/img/logo-white.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
+                    <div class="ptitle text-xl font-semibold mb-2">MusicHub</div>
+                    <div class="info">
+                        <p> &nbsp;&nbsp;&nbsp;This is a music website developed in HTML, CSS and JAVASCRIPT . To listen
+                            my playlist.</p>
+                    </div>
+                </div>
+
+                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
+                    <img src="/img/netflix.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
+                    <div class="ptitle text-xl font-semibold mb-2">Netflix clone</div>
+                    <div class="info">
+                        <p> &nbsp;&nbsp;&nbsp;This is a netflix clone website developed in HTML, CSS and JAVASCRIPT .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
+                    <img src="/img/gtc.jpg" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
+                    <div class="ptitle text-xl font-semibold mb-2">Guess the color</div>
+                    <div class="info">
+                        <p> &nbsp;&nbsp;&nbsp;This website help me to understand the rgba values of colors.</p>
+                    </div>
+                </div>
+
+                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
+                    <img src="/img/amazon.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
+                    <div class="ptitle text-xl font-semibold mb-2">Amazon Clone</div>
+                    <div class="info">
+                        <p> &nbsp;&nbsp;&nbsp;This is a amazon clone website developed in HTML, CSS and JAVASCRIPT .</p>
+                    </div>
+                </div>
+
+                <div class="card w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
+                    <img src="/img/ars.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
+                    <div class="ptitle text-xl font-semibold mb-2">Airline Reservation System</div>
+                    <div class="info">
+                        <p> &nbsp;&nbsp;&nbsp;This is my final year project. It is developed for book the airline
+                            tickets and manage flights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+
+        <div id="Contact">
+
+        </div>
 
     </main>
 
-    <footer></footer>
+    <footer class="h-10 w-full bg-purple-900 text-white flex justify-center">
+        <div class="content text-2xl font-bold p-1">
+            &copy; copyright by Rutik
+        </div>
+    </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector("ul");
+            e.name === "menu"
+                ? ((e.name = "close"),
+                    list.classList.add("top-[80px]"),
+                    list.classList.add("opacity-100"))
+                : ((e.name = "menu"),
+                    list.classList.remove("top-[80px]"),
+                    list.classList.remove("opacity-100"));
+        }
+        function opentab(tabName) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName('tab-contents');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.add('hidden');
+            }
+            // Show the selected tab content
+            document.getElementById(tabName).classList.remove('hidden');
+        }
+    </script>
 </body>
 
 </html>
