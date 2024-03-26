@@ -1,286 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rutik's Portfolio</title>
-    <link rel="stylesheet" href="./css/output.css" />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  <title>Rutik's Portfolio</title>
+
+  <!-- Bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- my css files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/respo-style.css" />
 </head>
 
-<body class="bg-purple-500 font-\[Poppins\] scroll-smooth">
-    <header>
-        <nav class="p-5 bg-purple-900 shadow md:flex md:items-center md:justify-between text-white fixed w-full top-0">
-            <div class="flex justify-between items-center">
-                <span class="text-3xl cursor-pointer font-bold">
-                    Rutik's Portfolio
-                </span>
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                </span>
-            </div>
-            <ul
-                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-purple-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#Home" class="text-xl hover:text-purple-500 duration-500 relative">Home
-                    </a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#About" class="text-xl hover:text-purple-500 duration-500">About Me</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#Project" class="text-xl hover:text-purple-500 duration-500">Project</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#Contact" class="text-xl hover:text-purple-500 duration-500">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+  <!-- Navbar Section -->
+  <header class="header-wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" class="img-fluid" alt="logo" />
+        </a>
 
-    <main>
-        <!-- Home Section -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fas-steam navbar-toggler-icon"></i>
+        </button>
 
-        <div id="Home"
-            class="flex flex-col mt-16 justify-center md:flex-row md:items-center md:justify-between md:my-24 md:mx-10">
-            <div class="left text-white mb-10 flex flex-col items-center md:flex-row md:mb-0">
-                <div class="info text-center md:text-left text-3xl">
-                    <p class="md:text-6xl text-4xl font-bold py-3 md:py-5">
-                        Hi, I am <span class="text-purple-900">Rutik Kale.</span>
-                    </p>
-                    <p class="py-2">
-                        I am passionate about Web as well as Java Development.
-                    </p>
-                    <div class="buttons flex flex-col md:flex-row items-center justify-center md:justify-start m-5">
-                        <a href="https://drive.google.com/file/d/1D3l4KuXnMrRR2UwulinFlq2p1d2X5KMV/view?usp=sharing"
-                            download
-                            class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2">
-                            Resume
-                        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contract Me</a>
+            </li>
 
-                        <a href="https://github.com/rutikbkale"
-                            class="focus:outline-none text-white bg-purple-900 text-2xl hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-lg px-5 py-2.5 m-2 md:mr-4">
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="right my-10">
-                <img src="https://cdni.iconscout.com/illustration/premium/thumb/full-stack-developer-working-on-project-5248497-4403356.png"
-                    alt="" class="w-full md:max-w-lg" />
-            </div>
+          </ul>
         </div>
-        <div class="seprater h-2 w-full md:w-auto bg-purple-900"></div>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Home Section -->
+  <section id="home" class="banner-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 order-lg-1 order-2 banner-content">
+          <h2 class="text-uppercase position-relative">Hello, </h2>
+          <h1 class="text-uppercase">I am Rutik Kale.</h1>
+          <h5 class="text-uppercase">A passionate Web and Java Developer.</h5>
+          <div class="mt-5">
+            <a href="#" class="main-btn primary-btn">Github</a>
+            <a href="#" class="main-btn secondary-btn ms-4">View CV</a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1">
+          <div class="top-right-img">
+            <img src="img/home-right.webp" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- About Section -->
+  <!-- About Section -->
+  <section id="about" class="about-wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <img src="img/about-us.webp" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h3>About Me </h3>
+          <p>Hello my name is Rutik Kale. I am currently a graduate student pursuing my master's degree at JSPM's RSCOE
+            Tathawade , specializing in Computer Application With a strong academic foundation and a deep curiosity for
+            learning new technologies, I am committed to expanding my knowledge in this ever-evolving field.</p>
+          <p>I am enthusiastic about connecting with fellow students, professors, and professionals in software
+            industries to share insights, ideas, and inspiration. Let's connect and explore the possibilities together.
+          </p>
+          <a href="#" class="main-btn primary-btn">Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="m-5  md:my-20 md:py-5 font-sans text-white" id="About">
-            <span class="font-bold text-3xl md:text-5xl">About Me</span>
-            <div class="container flex flex-col md:flex-row">
-                <!-- Left section -->
-                <div class="left md:m-5 w-full md:w-1/2">
-                    <div class="flex flex-row my-3 md:m-5">
-                        <p class="mx-5 cursor-pointer text-2xl md:text-3xl font-bold hover:border-b-2 border-purple-900" onclick="opentab('skills')">Skills
-                        </p>
-                        <p class="mx-5 cursor-pointer text-2xl md:text-3xl font-bold hover:border-b-2 border-purple-900" onclick="opentab('education')">
-                            Education</p>
-                        <p class="mx-5 cursor-pointer text-2xl md:text-3xl font-bold hover:border-b-2 border-purple-900" onclick="opentab('certificates')">
-                            Certificates</p>
-                    </div>
-
-                    <div class="tab-contents active-tab md:m-5" id="skills">
-                        <!-- Skills content -->
-                        <ul class="mx-5">
-                            <li class="text-2xl my-4 border-b border-purple-900">
-                                <span class="block text-2xl font-bold mb-2">FrontEnd Tech</span>
-                                <ul class="flex gap-4 text-xl">
-                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Html</li>
-                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Css</li>
-                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Javascript</li>
-                                    <li class="mr-2 md:mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Tailwind</li>
-                                </ul>
-                            </li>
-                            <li class="text-lg my-4 border-b border-purple-900">
-                                <span class="block text-2xl font-bold mb-2">BackEnd Tech</span>
-                                <ul class="flex flex-wrap">
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Java</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Php</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Spring</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Node.js</li>
-                                </ul>
-                            </li>
-                            <li class="text-2xl my-4 border-b border-purple-900">
-                                <span class="block text-2xl font-bold mb-2">Databases</span>
-                                <ul class="flex gap-4 text-xl">
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">Oracle</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">MySql</li>
-                                    <li class="mr-4 mb-2 px-2 py-1 bg-purple-900 rounded-lg">MongoDB</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents md:m-5 hidden" id="education">
-                        <!-- Education content -->
-                        <ul class="mx-5 space-y-4">
-                            <li class="<div class=" tab-contents m-5" id="education">
-                                <ul class="mx-5 space-y-4">
-                                    <li class="border-b border-purple-900 pb-4">
-                                        <span class="text-2xl font-semibold">Bachelor's in Computer Science
-                                            (BCS)</span><br>
-                                        <span class="text-gray-300">Sadguru Gadage Maharaj College (SGM),
-                                            Karad</span><br>
-                                        <span class="flex justify-between text-gray-300">
-                                            <p>9.13 CGPA</p>
-                                            <p>2020-2023</p>
-                                        </span>
-                                    </li>
-                                    <li class="border-b border-purple-900 pb-4">
-                                        <span class="text-2xl font-semibold">Master's in Computer Application
-                                            (MCA)</span><br>
-                                        <span class="text-gray-300">JSPM's Rajarshi Shahu College of Engineering
-                                            (RSCOE), Tathawade</span><br>
-                                        <span class="flex justify-end text-gray-300">
-                                            <p>2023-present</p>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents md:m-5 hidden" id="certificates">
-                        <!-- Certificates content -->
-                        <ul class="mx-5 space-y-4">
-                            <span class="text-2xl">Java Developer Training - Besant Technologies</span>
-                            <li class="border-b border-purple-900">
-                                <a href="https://drive.google.com/file/d/1Y-k_IdKOe83Qwp_ymfXp-WVb3eFiA9Gn/view?usp=sharing"
-                                    class="block hover:bg-transparent transition duration-300 px-4 py-2 rounded-lg"><button
-                                        class="focus:outline-none text-white bg-purple-900 hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-md px-2">Click
-                                        here</button>
-                                </a>
-                            </li>
-                            <span class="text-2xl">Full Stack Web Development - Infosys Springboard</span>
-                            <li class="border-b border-purple-900">
-                                <a href="https:/>
-                                <a href="
-                                    https://drive.google.com/file/d/1rHx0X9tUWvOo6Zqgcvik_UQS3IZZp7hy/view?usp=sharing"
-                                    class="block hover:bg-transparent transition duration-300 px-4 py-2 rounded-lg"><button
-                                        class="focus:outline-none text-white bg-purple-900 hover:bg-white hover:text-purple-900 focus:ring-4 focus:ring-purple-700 font-medium rounded-md px-2">Click
-                                        here</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Right section -->
-                <div class="right m-2 md:m-5 text-xl md:text-2xl w-full md:w-1/2">
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Hello my name is Rutik Kale. I am currently a graduate student currently
-                        pursuing my master's degree at JSPM's RSCOE Tathawade, specializing in Computer Application With
-                        a strong academic foundation and a deep curiosity for learning new technologies, I am committed
-                        to expanding my knowledge in this ever-evolving field.
-                    </p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;I am enthusiastic about connecting with fellow students, professors, and
-                        professionals in software industries to share insights, ideas, and inspiration. Let's connect
-                        and explore the possibilities together.
-                    </p>
-                </div>
+  <!-- Project Section -->
+  <section id="project" class="project-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center mb-5">
+          <h2>My Work</h2>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card rounded-0 border-0 text-center py-5 px-3">
+            <div>
+              <img src="img/projects/ars.jpg" alt="" class="img-fluid">
             </div>
+            <h5 class="text-uppercase mt-4 mb-3">Airline Reservation System</h5>
+            <p>This is my final year major project. It is basically developed for to book the airline tickets and manage
+              flights and their schedules.</p>
+          </div>
         </div>
-        <div class="seprater h-2 w-full md:w-auto bg-purple-900"></div>
+        <div class="col-lg-3 col-sm-6 mb-4">
 
-        <!-- Project Section -->
-
-        <div id="Project" class="m-5 md:py-5 font-sans text-white">
-            <span class="font-bold text-3xl md:text-5xl">Projects</span>
-            <div class="container flex flex-col md:flex-row flex-wrap my-10 justify-center items-center">
-
-                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
-                    <img src="img/logo-white.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
-                    <div class="ptitle text-xl font-semibold mb-2">MusicHub</div>
-                    <div class="info">
-                        <p> &nbsp;&nbsp;&nbsp;This is a music website developed in HTML, CSS and JAVASCRIPT . To listen
-                            my playlist.</p>
-                    </div>
-                </div>
-
-                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
-                    <img src="img/netflix.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
-                    <div class="ptitle text-xl font-semibold mb-2">Netflix clone</div>
-                    <div class="info">
-                        <p> &nbsp;&nbsp;&nbsp;This is a netflix clone website developed in HTML, CSS and JAVASCRIPT .
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
-                    <img src="img/gtc.jpg" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
-                    <div class="ptitle text-xl font-semibold mb-2">Guess the color</div>
-                    <div class="info">
-                        <p> &nbsp;&nbsp;&nbsp;This website help me to understand the rgba values of colors.</p>
-                    </div>
-                </div>
-
-                <div class="card max-w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
-                    <img src="img/amazon.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
-                    <div class="ptitle text-xl font-semibold mb-2">Amazon Clone</div>
-                    <div class="info">
-                        <p> &nbsp;&nbsp;&nbsp;This is a amazon clone website developed in HTML, CSS and JAVASCRIPT .</p>
-                    </div>
-                </div>
-
-                <div class="card w-full md:h-96 md:w-72 my-4 mx-2 bg-purple-900 rounded-lg shadow-lg p-2">
-                    <img src="img/ars.png" alt="ARS" class="h-25 md:h-30 md:w-full rounded-lg shadow-lg">
-                    <div class="ptitle text-xl font-semibold mb-2">Airline Reservation System</div>
-                    <div class="info">
-                        <p> &nbsp;&nbsp;&nbsp;This is my final year project. It is developed for book the airline
-                            tickets and manage flights.</p>
-                    </div>
-                </div>
+          <div class="card rounded-0 border-0 text-center py-5 px-3">
+            <div>
+              <img src="img/projects/musichub.png" alt="" class="img-fluid">
             </div>
+            <h5 class="text-uppercase mt-4 mb-3">MusicHub</h5>
+            <p>This is a music website developed in HTML, CSS and JAVASCRIPT . To listen my playlist.</p>
+          </div>
         </div>
-        <div class="seprater h-2 w-full md:w-auto bg-purple-900"></div>
-        <!-- Contact Section -->
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card rounded-0 border-0 text-center py-5 px-3">
+            <div>
+              <img src="img/projects/gtc.jpg" alt="" class="img-fluid" width="229px" height="229px">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3">Guess the color</h5>
 
-        <div id="Contact">
-            
+            <p>This is fun to develop that type of web pages using JavaScript and CSS.</p>
+          </div>
         </div>
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card rounded-0 border-0 text-center py-5 px-3">
+            <div>
+              <img src="img/projects/amazon.jpg" alt="" class="img-fluid" width="229px" height="229px">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3">Amazon Clone</h5>
 
-    </main>
-
-    <footer class="h-10 w-full bg-purple-900 text-white flex justify-center">
-        <div class="content text-2xl font-bold p-1">
-            &copy; copyright by Rutik
+            <p>This is basic static web page. In this project I am just create one simple website using HTML and CSS.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <script>
-        function Menu(e) {
-            let list = document.querySelector("ul");
-            e.name === "menu"
-                ? ((e.name = "close"),
-                    list.classList.add("top-[80px]"),
-                    list.classList.add("opacity-100"))
-                : ((e.name = "menu"),
-                    list.classList.remove("top-[80px]"),
-                    list.classList.remove("opacity-100"));
-        }
-        function opentab(tabName) {
-            // Hide all tab contents
-            var tabContents = document.getElementsByClassName('tab-contents');
-            for (var i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.add('hidden');
-            }
-            // Show the selected tab content
-            document.getElementById(tabName).classList.remove('hidden');
-        }
-    </script>
+  <!-- Bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
